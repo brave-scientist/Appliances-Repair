@@ -72,31 +72,29 @@
 
     .nav-actions { display: flex; align-items: center; gap: 10px; }
 
-    .open-badge {
+    .whatsapp-link {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
-        background: #e6f4ea;
-        color: var(--success);
-        font-size: 0.78rem;
-        font-weight: 700;
-        padding: 5px 12px;
-        border-radius: 999px;
-        white-space: nowrap;
-    }
-
-    .open-badge::before {
-        content: "";
-        width: 8px; height: 8px;
-        background: var(--success);
+        justify-content: center;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
-        animation: pulse 1.6s infinite;
+        background: linear-gradient(135deg, #25d366, #1ebe57);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        flex-shrink: 0;
     }
 
-    @keyframes pulse {
-        0%   { box-shadow: 0 0 0 0 rgba(46,125,50,0.45); }
-        70%  { box-shadow: 0 0 0 7px rgba(46,125,50,0); }
-        100% { box-shadow: 0 0 0 0 rgba(46,125,50,0); }
+    .whatsapp-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45);
+    }
+
+    .whatsapp-icon {
+        width: 22px;
+        height: 22px;
+        display: block;
     }
 
     .btn {
@@ -456,7 +454,6 @@
     }
 
     @media (max-width: 720px) {
-        .nav-actions .open-badge { display: none; }
         .hero { padding: 60px 16px 120px; }
         section { padding: 60px 16px 30px; }
         .contact-grid { grid-template-columns: 1fr; }
@@ -465,6 +462,7 @@
         .brand-logo { width: 38px; height: 38px; font-size: 19px; border-radius: 10px; }
         .brand-text h1 { font-size: 0.82rem; line-height: 1.25; }
         .brand-text span { display: none; }
+        .whatsapp-link { width: 42px; height: 42px; }
         .header-call { padding: 9px 16px !important; font-size: 0.85rem !important; }
         .call-full { display: none; }
         .call-short { display: inline-flex; }
@@ -491,7 +489,11 @@
             </div>
         </a>
         <div class="nav-actions">
-            <span class="open-badge">Open 24 Hours</span>
+            <a class="whatsapp-link" href="https://wa.me/919136883092?text=I%20want%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20.52 3.48A11.63 11.63 0 0 0 3.52 18.5L2 22l3.62-1.05A11.63 11.63 0 1 0 20.52 3.48Zm-6.13 16.64c-1.45 0-2.88-.39-4.13-1.12l-.3-.18-2.15.62 1.01-2.1-.2-.33a9.55 9.55 0 1 1 15.5-8.1 9.55 9.55 0 0 1-9.73 9.61Zm5.28-7.15c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.19.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.21-.45-2.31-1.43-.86-.76-1.44-1.7-1.61-1.98-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.2-.29.29-.49.1-.2.05-.38-.03-.53-.08-.15-.67-1.61-.92-2.2-.24-.57-.49-.49-.67-.49h-.57c-.2 0-.53.08-.8.38-.27.29-1.03 1.01-1.03 2.47 0 1.45 1.06 2.87 1.21 3.07.16.2 2.08 3.18 5.05 4.46.7.3 1.25.49 1.68.63.71.22 1.36.19 1.87.12.57-.09 1.71-.7 1.95-1.38.25-.68.25-1.27.18-1.39-.08-.12-.27-.2-.56-.35Z" fill="currentColor"/>
+                </svg>
+            </a>
             <a class="btn btn-call header-call" href="tel:+919136883092">
                 <span class="call-full">📞 091368 83092</span>
                 <span class="call-short">📞 Call</span>
@@ -637,7 +639,7 @@
                     <div class="icon">🌐</div>
                     <div>
                         <h5>Website</h5>
-                        <a href="https://24x7smartcareservice.com" target="_blank" rel="noopener">24x7smartcareservice.com</a>
+                        <a href="https://appliances-repair.mooo.com" target="_blank" rel="noopener">appliances-repair.mooo.com</a>
                     </div>
                 </div>
                 <div class="info-row">
@@ -679,7 +681,7 @@
         <a href="#why-us">Why Us</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
-        <a href="https://24x7smartcareservice.com" target="_blank" rel="noopener">Website</a>
+        <a href="https://appliances-repair.mooo.com" target="_blank" rel="noopener">Website</a>
     </div>
     Shop No.21, Shastri Nagar, Lokhandwala Complex, Andheri West, Mumbai, Maharashtra 400053<br>
     © 2026 24x7 Fridge Washing Machine Repair Service. All rights reserved.
